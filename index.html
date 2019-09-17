@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eriksminde</title>
+    <meta name="description" content="Tekst">
+
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/bjk4myu.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xnr8ddg.css">
+
+
+</head>
+
+<body>
+  <header>
+    <!-- Progressbar oppe i toppen som viser hvor langt man er på siden -->
+    <div id="progress"></div>
+</header>
+
+<article>
+
+<div class="video-gradient">
+  <h1>Eriksminde</h1>
+  </div>
+  <div class="paper-tore">
+    <img src="images/paper_tore_up.png" alt="paper tore">
+    <p>Et sted med et kunstnerisk, demokratisk,
+      fagligt og filosofisk afsæt laver skole, hvor mennesker mødes ligeværdigt, trygt og tillidsfuldt.</p>
+  </div>
+
+    <video id="reelVideo" muted loop >
+      <source src="videos/eriksminde_video01.mp4" type="video/mp4">
+    </video>
+
+<section>
+  <!-----------doodles for the section---------->
+  <img class="d1-pizza dsize" src="images/pizza.svg" alt="doodle of pizza">
+  <img class="d1-vinyl dsize" src="images/vinyl.svg" alt="doodle of vinyl">
+  <img class="d1-planet dsize" src="images/planet.svg" alt="doodle of planet">
+  <!-----------doodles for the section end---------->
+<div class="h2-polaroid">
+  <h2>Få sat ord på<br>Eriksminde</h2>
+  </div>
+<div class="wrapper">
+<img class="arrow" src="images/arrow_text.png" alt="arrow">
+<div id="polaroid" onclick="changeImage();stopPlay();StopFunction();"></div>
+<div id="speaker">
+</div>
+<div id="speaker-img" class="speakerstyle" onclick="changeSound();timedAudioStart();">
+</div>
+</div>
+<!---floating elements on electronic music section--->
+<img class="element-keyboard" src="images/keyboard.png" alt="image of electronic keyboard">
+<!---floating elements on electronic music section end--->
+</section>
+
+
+<!-- parallax billede -->
+<figure>
+  <div class="paper-tore-up">
+    <img src="images/paper_tore.png" alt="paper tore">
+    <img src="images/paper_tore_straight.png" alt="paper tore">
+  </div>
+
+  <div class='container parallax' id='emusic'>
+    <div class="gradient">
+   <div class='content'>
+     <h4>Elektronisk Musik</h4>
+     <p>
+Computeren er et instrument, vi skal lære at spille på. Det er ikke en guitar, et keyboard eller en saxofon men et instrument i sig selv, som vi skal lære at kende og bruge.</p>
+   </div>
+ </div>
+ </div>
+</figure>
+
+
+<!-- indhold til 1. værdier -->
+<section class="value-section">
+  <!--------headset img for electronic music----->
+  <img class="element-headset" src="images/headset_half.png" alt="image of headphones">
+  <!--------headset img for electronic music end----->
+  <img class="d2-comet dsize" src="images/comet.svg" alt="doodle of comet">
+  <img class="d2-pen dsize" src="images/pen.svg" alt="doodle of pen">
+  <img class="d2-glasses dsize" src="images/glasses.svg" alt="doodle of planet">
+  <img class="d2-vinyl dsize" src="images/vinyl.svg" alt="">
+<div class="value-wrapper">
+  <div class="value-text">
+  <h3> Frisind</h3>
+  <p>Frihed til at tro, mene og ytre sig efter sin overbevisning.
+således den åbne samtale bliver central.</p>
+</div>
+  <img src="images/frihed.svg" alt="ikon af frisind">
+</div>
+
+<div class="value-wrapper">
+  <div class="value-text">
+  <h3> Læring</h3>
+  <p>Dannelse for øje frem for udelukkende fag og præstation.</p>
+</div>
+  <img src="images/læring.svg" alt="ikon af læring">
+</div>
+<!--------sawdust img for farmer----->
+<img class="element-sawdust" src="images/sawdust02.png" alt="image of sawdust">
+<!--------sawdust img forfarmer end----->
+</section>
+
+<figure>
+
+  <div class="paper-tore-up">
+    <img src="images/paper_tore_straight_up.png" alt="paper tore">
+    <img src="images/paper_tore_up.png" alt="paper tore">
+  </div>
+
+  <div class='container parallax' id='farmer'>
+    <div class="gradient2">
+   <div class='content'>
+     <h4>"Bonderøven"</h4>
+     <p>
+       Vi leger med naturen. Vi får ting til at spire, får grønne fingre, beskidte hænder og røde kinder.
+     </p>
+   </div>
+ </div>
+ </div>
+</figure>
+
+<section class="value-section">
+  <img class="d3-pizza dsize" src="images/pizza.svg" alt="doodle of comet">
+  <img class="d3-planet dsize" src="images/planet.svg" alt="doodle of pen">
+  <img class="d3-comet dsize" src="images/comet.svg" alt="doodle of planet">
+  <img class="d3-glasses dsize" src="images/glasses.svg" alt="">
+  <!--------headset img for farmer----->
+  <img class="element-leaves" src="images/leaves.png" alt="image of leaves">
+  <!--------headset img for farmer end----->
+<div class="value-wrapper">
+  <div class="value-text">
+  <h3> Hjem</h3>
+  <p>Et sted præget af tryghed, naturlighed, tillid,
+frihed og ansvar.</p>
+</div>
+  <img src="images/hjem.svg" alt="ikon af hjem">
+</div>
+
+<div class="value-wrapper">
+  <div class="value-text">
+  <h3> Demokrati</h3>
+  <p>skolehverdagen lever i et demokrati, hvor samtalen er
+central, såvel som man i undervisningen lærer om og taler om demokrati.</p>
+</div>
+  <img src="images/demokrati.svg" alt="ikon af demokrati">
+</div>
+
+</section>
+
+<section>
+  <div id="video">
+  </div>
+  <div class="paper-tore-up">
+    <img src="images/paper_tore_straight_up.png" alt="paper tore">
+    <img src="images/paper_tore_straight.png" alt="paper tore">
+  </div>
+  <video id="myvideo">
+    <source src="videos/tour.mp4">
+  </video>
+
+
+</section>
+
+<!--------værdier end--------->
+<footer>
+<img class="footer-end" src="images/eriksminde.png" alt="image of eriksmidne">
+<h2>Velkommen til</h2>
+<h2 class="footer-h2-big">Fællesskabet</h2>
+<div class="footer-center-p">
+<p>"Det vigtigste er, at I har et håb, og at I har en tro. På os, på hinanden og ikke mindst på jer selv."</p>
+<p class="footer-p-green">- Lynge Korsgaard, Forstander</p>
+</div>
+<a class="book-button" href="#">Besøg os!</a>
+</footer>
+</article>
+
+<script src="js/script.js"></script>
+
+</body>
